@@ -3,6 +3,8 @@ const inputCoupon = document.querySelector('#coupon');
 const btn = document.querySelector('#calcular');
 const pResult = document.querySelector('#result');
 
+btn.addEventListener('click', calcularPrecioConDescuento);
+
 class Coupon {
     constructor(name, discount) {
         this.name = name,
@@ -28,3 +30,4 @@ function calcularPrecioConDescuento() {
         return
     }
 }
+
